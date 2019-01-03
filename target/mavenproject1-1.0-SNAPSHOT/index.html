@@ -17,7 +17,7 @@
                     <li class="red"> Buzón de consultas</li>
                     <li><img src="images/line.png"></li>
                     <li><img src="images/information.png"></li>
-                    <li class="red">Guía de uso</li>                   
+                    <li class="red">Guía de uso</li>
                     <li class="RedDcha">
                         <img src="images/power.png"></li>
                     <li class="RedDcha"><img src="images/line.png"></li>
@@ -28,7 +28,7 @@
         </div>
         <!-- END RED ZONE -->
         <div class="topnav">
-            <div class="contenedorB"> 
+            <div class="contenedorB">
                 <p style="float: left;">
                     <a href="index.html">
                         <img src="images/logoo.jpg" width="150" height="66">
@@ -41,22 +41,54 @@
         <!-- END TOP BAR-->
 <div class="login-page">
   <div class="form">
-    <form class="login-form">
-      <input type="text" placeholder="Usuario"/>
-      <input type="password" placeholder="Contraseña"/>
-      <button><a href="inicio.html">login</a></button>
+    <form class="login-form" name="login">
+      <input type="text" name="usuario" placeholder="Usuario"/>
+      <input type="password" name="password" placeholder="Contraseña"/>
+      <input type="button" value="login" onClick="Login()">
         <div class="switch">
-            <input type="radio" class="switch-input" name="view" value="week" id="week" checked>
-            <label for="week" class="switch-label switch-label-off">Alumno</label>
-            <input type="radio" class="switch-input" name="view" value="month" id="month">
-            <label for="month" class="switch-label switch-label-on">Profesor</label>
+            <input type="radio" class="switch-input" name="view" value="alumno" id="alumno" checked>
+            <label for="alumno" class="switch-label switch-label-off">Alumno</label>
+            <input type="radio" class="switch-input" name="view" value="profesor" id="profesor">
+            <label for="profesor" class="switch-label switch-label-on">Profesor</label>
             <span class="switch-selection"></span>
         </div>
     </form>
   </div>
 </div>
-    
-        
+
+        <script>
+            function Login(){
+                var done=0;
+                var usuario=document.login.usuario.value;
+                var password=document.login.password.value;
+                var opcion=document.getElementsByClassName("switch-input")[0].checked ? "Alumno" : "Profesor"
+                if (opcion=="Alumno"){                                   
+                    if (usuario=="USUARIO1" && password=="CONTRASEÑA1") {
+                        location="inicio.html";
+                    }
+                    else if (usuario=="USUARIO2" && password=="CONTRASEÑA2") {
+                        location="inicio.html";
+                    }
+                    else if (usuario=="" && password=="") {
+                    alert("Error, debes introducir un usuario o contraseña.")
+                    }
+                    else{
+                        alert("Error, usuario o contraseña no validos.")
+                    }
+                }
+                if (opcion=="Profesor"){
+                    if (usuario=="USUARIO3" && password=="CONTRASEÑA3") {
+                        location="inicio.html";
+                    }
+                    else if (usuario=="" && password=="") {
+                        alert("Error, debes introducir un usuario o contraseña.")
+                    }
+                    else{
+                        alert("Error, usuario o contraseña no validos.")
+                    }
+                }                
+            }
+        </script>
     </body>
 </html>
 

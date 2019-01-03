@@ -103,7 +103,6 @@ li.RedDcha{
 
 
 
-@import url(https://fonts.googleapis.com/css?family=Roboto:300);
 
 .login-page {
   width: 360px;
@@ -317,7 +316,7 @@ li:hover ul#submenu {
 
 
 *{box-sizing:border-box}
-@import 'https://fonts.googleapis.com/css?family=Open+Sans:400,400i&subset=cyrillic';
+
 
 .form-wrap {
   width: 70%;
