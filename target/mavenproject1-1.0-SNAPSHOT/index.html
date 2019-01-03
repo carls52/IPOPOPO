@@ -62,11 +62,14 @@
                 var usuario=document.login.usuario.value;
                 var password=document.login.password.value;
                 var opcion=document.getElementsByClassName("switch-input")[0].checked ? "Alumno" : "Profesor"
-                if (opcion=="Alumno"){                                   
+                if (opcion=="Alumno"){                    
                     if (usuario=="USUARIO1" && password=="CONTRASEÑA1") {
                         location="inicio.html";
                     }
                     else if (usuario=="USUARIO2" && password=="CONTRASEÑA2") {
+                        location="inicio.html";
+                    }
+                    else if (usuario=="aa" && password=="aa") {
                         location="inicio.html";
                     }
                     else if (usuario=="" && password=="") {
@@ -78,6 +81,9 @@
                 }
                 if (opcion=="Profesor"){
                     if (usuario=="USUARIO3" && password=="CONTRASEÑA3") {
+                        location="inicio.html";
+                    }
+                    else if (usuario=="aaa" && password=="aaa") {
                         location="inicio.html";
                     }
                     else if (usuario=="" && password=="") {
