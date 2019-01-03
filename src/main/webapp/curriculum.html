@@ -6,12 +6,12 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>Curriculum</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="nuevo.css" media="screen" />
     </head>
-    <body>
+        <body>
            <!-- BEGIN TOP BAR -->
     <div id="fondo">
            <!-- RED ZONE -->
@@ -44,7 +44,7 @@ and open the template in the editor.
                       <li><a class="btn btn-1" href="inicio.html">inicio</a></li>
                       <li><a class="btn btn-1" href="newhtml.html">ofertas</a></li>
                       <li><a class="btn btn-1">inscripciones</a>
-                      <li><a class="btn btn-1" href="curriculum.html">curriculum</a></li>
+                      <li><a class="btn btn-1" href="curriculum.html" style="color: #CB0017">curriculum</a></li>
                       <li><a class="btn btn-1">Contact Us</a></li>
                     </ul>
                 </nav>
@@ -52,9 +52,41 @@ and open the template in the editor.
 	</div>
         </div>
         <!-- END TOP BAR-->
-        
-        <img src="https://res.cloudinary.com/teepublic/image/private/s--pdvItnyz--/t_Preview/b_rgb:262c3a,c_limit,f_jpg,h_630,q_90,w_630/v1522283794/production/designs/2272537_3.jpg">
 
+        <div class="form-wrap">
+            <div class="profile"><img src="images/graduation.png">
+                <h1>USERNAME</h1>
+            </div>
+            <form class="formCurriculum">
+                <table class="table-content">
+                    <tr>
+                    <th>Nombre:</th><td><input type="text" name="name" placeholder="Nombre" required></td>
+                    <th>Apellidos:</th><td><input type="text" name="name" placeholder="Apellidos" required></td>
+                    </tr>
+                    <tr>
+                      <th>DNI:</th><td><input type="text" name="name" placeholder="DNI" required></td>
+                      <th>Teléfono:</th><td><input type="text" name="name" placeholder="Teléfono" required></td>
+                    </tr>
+                    <tr>
+                      <th>Email:</th><td><input type="text" name="name" placeholder="Email" required></td>
+                      <th>Titulaciones:</th><td><input type="text" name="name" placeholder="Titulaciones" required></td>
+                    </tr>
+                     </table>     
+                  <p class="titulo">Experiencia laboral</p>
+                  <input class="espInput" type="text" name="name">
+                  <p class="titulo">Formación reglada</p>
+                  <input class="espInput" type="text" name="name">
+                  <p class="titulo">Formación adicional</p>
+                  <input class="espInput" type="text" name="name">
+                  <p class="titulo">Idiomas</p>
+                  <input class="espInput" type="text" name="name">
+                  <p class="titulo">Otros datos</p>
+                  <input class="espInput" type="text" name="name">
+                <button class="btnCurriculum" type="submit">GUARDAR</button>  
+
+            </form> 
+        </div>
+        
      <script>
             var queryString = decodeURIComponent(window.location.search);
             queryString = queryString.slice(queryString.indexOf("=")+1);          

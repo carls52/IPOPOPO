@@ -29,7 +29,7 @@ and open the template in the editor.
                         </a>
                      </li>
                     <li class="RedDcha"><img src="images/line.png"></li>
-                    <li class="RedDcha">   "USERNAME"</li>
+                    <li class="RedDcha"><label id="username"></label><li>
                     <li class="RedDcha"><img src="images/user.png"></li>
                 </ul>
             </div>
@@ -41,16 +41,10 @@ and open the template in the editor.
                 <p style="float: left;"><a href="inicio.html"><img src="images/logoo.jpg" width="150" height="66"></a></p>
                 <nav class="dropdownmenu">
                     <ul style="margin-left: 25%;">
-                      <li><a class="btn btn-1">inicio</a></li>
+                      <li><a class="btn btn-1" href="inicio.html">inicio</a></li>
                       <li><a class="btn btn-1" href="newhtml.html">ofertas</a></li>
                       <li><a class="btn btn-1">inscripciones</a>
-                       <!-- <ul id="submenu">
-                          <li><a href="http://www.jochaho.com/wordpress/difference-between-svg-vs-canvas/">Difference between SVG vs. Canvas</a></li>
-                          <li><a href="http://www.jochaho.com/wordpress/new-features-in-html5/">New features in HTML5</a></li>
-                          <li><a href="http://www.jochaho.com/wordpress/creating-links-to-sections-within-a-webpage/">Creating links to sections within a webpage</a></li>
-                        </ul> -->
-                      </li>
-                      <li><a class="btn btn-1">curriculum</a></li>
+                      <li><a class="btn btn-1" href="curriculum.html">curriculum</a></li>
                       <li><a class="btn btn-1">Contact Us</a></li>
                     </ul>
                 </nav>
@@ -59,35 +53,12 @@ and open the template in the editor.
         </div>
         <!-- END TOP BAR-->
         
-        <div class="form-wrap">
-            <div class="profile"><img src="https://html5book.ru/wp-content/uploads/2016/10/profile-image.png">
-                <h1>PERFIL</h1>
-            </div>
-            <form class="formCurriculum">
-                <div>
-                    <label for="name">nombre</label>
-                    <input type="text" name="name" required>
-                    <label for="name">nombre</label>
-                    <input type="text" name="name" required>
-                </div>
+        <img src="https://res.cloudinary.com/teepublic/image/private/s--pdvItnyz--/t_Preview/b_rgb:262c3a,c_limit,f_jpg,h_630,q_90,w_630/v1522283794/production/designs/2272537_3.jpg">
 
-                <div>
-                    <label for="email">E-mail</label>
-                    <input type="email" name="email" required>
-                </div>
-                <div>
-                    <label for="country">pais</label>
-                    <select name="country">
-                    <option>---</option>
-                        <option value="ESPAÑA">ESPAÑA</option> 
-                        <option value="UK">UK</option> 
-                        <option value="PLANETA CULO">PLANETA CULO</option> 
-                    </select> 
-                </div> 
-                <button type="submit">OK</button> 
-            </form> 
-        </div>
-        
-        
+     <script>
+            var queryString = decodeURIComponent(window.location.search);
+            queryString = queryString.slice(queryString.indexOf("=")+1);          
+            document.getElementById("username").innerHTML=queryString;            
+     </script>   
     </body>
 </html>

@@ -337,6 +337,7 @@ li:hover ul#submenu {
   background: white;
   float: right;
   width: 60%;
+  height: auto;
   padding: 30px;
   border-radius: 0 20px 20px 0;
   color: #000000; 
@@ -380,16 +381,31 @@ select::-ms-expand {
   display: none;
 }
 
-button {
+.btnCurriculum {
   padding: 10px 0;
   border-width: 0;
   display: block;
-  width: 120px;
-  margin: 25px auto 0;
-  background: #60e6c5;
+  width: 25%;
+  margin: 20px auto 0;
+  background: #CB0017;
   color: white;
   font-size: 14px;
   outline: none;
   text-transform: uppercase;
 }
 
+
+
+.table-content{
+  min-width: 20%;
+  max-width: 60%;
+  }
+.espInput
+{
+    width: 500px;
+    height: 100px;
+}
+.titulo {
+    font-weight: bold;
+
+}
