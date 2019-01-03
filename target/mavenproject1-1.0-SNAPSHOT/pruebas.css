@@ -1,0 +1,467 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 03-ene-2019, 11:37:04
+    Author     : Carlos Gil Sabrido
+*/
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 29-nov-2018, 20:46:57
+    Author     : Carlos Gil Sabrido
+*/
+h2.titulo{
+    text-align: center;
+    text-decoration: none;
+    position: relative;
+    top: 15px;
+    right: 5%;
+}
+
+body {
+    color: #000000;
+    font-family: "Gill Sans","Gill Sans MT";
+    padding: 0px !important;
+    margin: 0px !important;
+    font-size: 13px;
+    direction: ltr;
+}
+#fondo{background-color: #000000}
+.contenedor{
+    padding-right: 5%;
+    padding-left: 2%;
+}
+.contenedorB{
+    background-color: #000000;
+    padding-right: 5%;
+    padding-left: 5%;
+    height: 70px;
+}
+ul#Red li {
+    
+    display:inline;
+    margin-right: 0.1%;
+}
+li.red{
+    position:relative;
+    bottom: 2px;
+}
+li.RedDcha{
+    float: right!important;
+    text-align: right;
+    position:relative;
+    bottom: 2px;
+}
+.dcha {
+    text-align: right;
+    display:inline-block;
+    width: 60%;
+}
+#RedHead { 
+    width: 100%;
+    padding-top: 1px;
+    font-weight: 300;
+    
+    background:#CB0017;
+    color: white;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+.fuck {
+    background-color:aqua;
+}
+.topnav {
+    margin-top: 0px;
+    padding-top: 0px;
+    background-color:#000000;
+    color: #ffffff;
+    height: 70px;
+    box-shadow: 0 5px 3px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+.topnav p{
+    margin: 0px 0px 0px;
+    color: white;
+    float: left;
+  
+    text-align: center;
+    padding: 4px 6px;
+}
+/*.container {
+    padding-left: 7%;
+    padding-right: 7%;
+    display: inline;
+    width: 750px;
+    font-size: 13px;
+    box-sizing: border-box;
+}*/
+
+
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+.login-page {
+  width: 360px;
+  padding: 8% 0 0;
+  margin: auto;
+}
+.form {
+  position: relative;
+  z-index: 1;
+  background: #FFFFFF;
+  max-width: 360px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.form input {
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.form button {
+  text-transform: uppercase;
+  outline: 0;
+  background: #CB0017;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  cursor: pointer;
+}
+.form button:hover,.form button:active,.form button:focus {
+  background: #B50000 ;
+}
+
+.form .register-form {
+  display: none;
+}
+
+
+
+.switch {
+  position: relative;
+  margin: 20px auto;
+  height: 26px;
+  width: 120px;
+  background-color: #FFFFFF;
+  border-radius: 3px;
+  -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.1);
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.1);
+}
+
+.switch-label {
+  position: relative;
+  z-index: 2;
+  float: left;
+  width: 58px;
+  line-height: 26px;
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.35);
+  text-align: center;
+  text-shadow: 0 0px 0px #000000;
+  cursor: pointer;
+}
+.switch-label:active {
+  font-weight: bold;
+}
+.switch-label-off {
+  padding-left: 2px;
+}
+.switch-label-on {
+  padding-right: 2px;
+}
+
+/*
+  Note: using adjacent or general sibling selectors 
+  combined with pseudo classes doesn't work in Safari 
+  5.0 and Chrome 12.
+  See this article for more info and a potential fix: 
+  https://css-tricks.com/webkit-sibling-bug/
+*/
+
+.switch-input {
+  display: none;
+}
+
+.switch-input:checked + .switch-label {
+  font-weight: bold;
+  /*color: rgba(0, 0, 0, 0.65);*/
+  color: #FFFFFF;
+ /* text-shadow: 0 1px rgba(255, 255, 255, 0.25);*/
+  text-shadow: 0 1px 1px #000000;
+  -webkit-transition: 0.15s ease-out;
+  -moz-transition: 0.15s ease-out;
+  -o-transition: 0.15s ease-out;
+  transition: 0.15s ease-out;
+}
+
+.switch-input:checked + .switch-label-on ~ .switch-selection {
+  /* Note: left: 50% doesn't transition in WebKit */
+  left: 60px;
+}
+
+.switch-selection {
+  display: block;
+  position: absolute;
+  z-index: 1;
+  top: 2px;
+  left: 2px;
+  width: 58px;
+  height: 22px;
+  background: #CB0017;
+  border-radius: 3px;
+  background-image: -webkit-linear-gradient(top, #CB0017, #CB0017);
+  background-image: -moz-linear-gradient(top, #CB0017, #CB0017);
+  background-image: -o-linear-gradient(top, #CB0017, #CB0017);
+  background-image: linear-gradient(to bottom, #CB0017, #CB0017);
+  -webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.5), 0 0 2px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.5), 0 0 2px rgba(0, 0, 0, 0.2);
+  -webkit-transition: left 0.15s ease-out;
+  -moz-transition: left 0.15s ease-out;
+  -o-transition: left 0.15s ease-out;
+  transition: left 0.15s ease-out;
+}
+
+/*
+MENU
+*/
+.dropdownmenu ul, .dropdownmenu li {
+	margin: 0 20px;
+	padding: 0;
+}
+.dropdownmenu ul {
+        
+	background: gray;
+	list-style: none;
+	width: 100%;
+}
+.dropdownmenu li {
+	float: left;
+	position: relative;
+	width:auto;
+}
+.dropdownmenu a {
+	background: #000000;
+	color: #FFFFFF;
+	display: block;
+	padding: 25px 25px 25px 10px;
+	text-align: center;
+	text-decoration: none;
+	-webkit-transition: all .25s ease;
+	-moz-transition: all .25s ease;
+	-ms-transition: all .25s ease;
+	-o-transition: all .25s ease;
+	transition: all .25s ease;
+}
+#submenu {
+	left: 0;
+	opacity: 0;
+	position: absolute;
+	top: 35px;
+	visibility: hidden;
+	z-index: 1;
+}
+li:hover ul#submenu {
+	opacity: 1;
+	top: 40px;	/* adjust this as per top nav padding top & bottom comes */
+	visibility: visible;
+}
+#submenu li {
+	float: none;
+	width: 100%;
+}
+#submenu a:hover {
+	background: #DF4B05;
+}
+#submenu a {
+	background-color:#000000;
+}
+
+
+.btn {
+  color: #fff;
+  cursor: pointer;
+  margin: 0 0 2em;
+  max-width: 160px; 
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100%; 
+} 
+.btn-1 {
+    background:#000000;
+    font-weight: 100;
+ }
+.btn-1:hover {
+    background: #000000;
+    font-weight: 900;
+    letter-spacing: 1px;
+    color: #CB0017;
+}
+
+
+
+
+
+*{box-sizing:border-box}
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:400,400i&subset=cyrillic';
+
+.form-wrap {
+  width: 70%;
+  margin-top: 1%;
+  margin-left: 15%;
+  margin-right: 15%;
+  background: #ffd500;
+  border-radius: 20px;
+}
+.form-wrap *{transition: .1s linear}
+.profile {
+  width: 240px;
+  float: left;
+  text-align: center;
+  padding: 30px;
+}
+form {
+  background: white;
+  float: left;
+  width: calc(100% - 240px);
+  padding: 30px;
+  border-radius: 0 20px 20px 0;
+  color: #7b7b7b; 
+}
+.form-wrap:after, form div:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+form div {
+  margin-bottom: 15px;
+  position: relative;
+}
+h1 {
+  font-size: 24px;
+  font-weight: 400;
+  position: relative;
+  margin-top: 50px;
+}
+h1:after {
+  content: "\f138";
+  font-size: 40px;
+  font-family: FontAwesome;
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+label, span {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+input[type="text"], input[type="email"] {
+  width: 100%;
+  padding: 10px 15px;
+  border-width: 0;
+  background: #e6e6e6;
+  outline: none;
+  margin: 0;
+}
+input[type="text"]:focus, input[type="email"]:focus {
+  box-shadow: inset 0 0 0 2px rgba(0,0,0,.2);
+}
+.radio label {
+  position: relative;
+  padding-left: 50px;
+  cursor: pointer;
+  width: 50%;
+  float: left;
+  line-height: 40px;
+}
+.radio input {
+  position: absolute;
+  opacity: 0;
+}
+.radio-control {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 40px;
+  width: 40px;
+  background: #e6e6e6;
+  border-radius: 50%;
+  text-align: center;
+}
+.male:before {
+  content: "\f222";
+  font-family: FontAwesome;
+  font-weight: bold;
+}
+.female:before {
+  content: "\f221";
+  font-family: FontAwesome;
+  font-weight: bold;
+}
+.radio label:hover input ~ .radio-control,
+.radiol input:focus ~ .radio-control {
+  box-shadow: inset 0 0 0 2px rgba(0,0,0,.2);
+}
+.radio input:checked ~ .radio-control {
+  color: red;
+}
+select {
+  width: 100%;
+  cursor: pointer;
+  padding: 10px 15px;
+  outline: 0;
+  border: 0;
+  background: #e6e6e6;
+  color: #7b7b7b;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+select::-ms-expand {
+  display: none;
+}
+.select-arrow {
+  position: absolute;
+  top: 38px;
+  right: 15px;
+  width: 0;
+  height: 0;
+  pointer-events: none;
+  border-style: solid;
+  border-width: 8px 5px 0 5px;
+  border-color: #7b7b7b transparent transparent transparent;
+}
+button {
+  padding: 10px 0;
+  border-width: 0;
+  display: block;
+  width: 120px;
+  margin: 25px auto 0;
+  background: #60e6c5;
+  color: white;
+  font-size: 14px;
+  outline: none;
+  text-transform: uppercase;
+}
+@media (max-width: 600px) {
+  body {display: block}
+  .form-wrap {margin: 20px auto; max-width: 550px; width:100%}
+  .profile, form {float: none; width: 100%}
+  h1 {margin-top: auto; padding-bottom: 50px;}
+  form {border-radius: 0 0 20px 20px}
+}

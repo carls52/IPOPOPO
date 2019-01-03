@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="nuevo.css" media="screen" />
+    </head>
+    <body>
+           <!-- BEGIN TOP BAR -->
+    <div id="fondo">
+           <!-- RED ZONE -->
+        <div id="RedHead">
+             <div class="contenedor">
+                <ul id="Red">
+                    <li><img src="images/sobre.png"></li>
+                    <li class="red"> Buzón de consultas</li>
+                    <li><img src="images/line.png"></li>
+                    <li><img src="images/information.png"></li>
+                    <li class="red">Guía de uso</li>                   
+                    <li class="RedDcha">
+                        <a href="index.html">
+                            <img src="images/power.png">
+                        </a>
+                     </li>
+                    <li class="RedDcha"><img src="images/line.png"></li>
+                    <li class="RedDcha">   "USERNAME"</li>
+                    <li class="RedDcha"><img src="images/user.png"></li>
+                </ul>
+            </div>
+        </div>
+           <!-- end red zone -->
+           <!-- black zone -->
+        <div class="topnav">
+            <div class="contenedorB"> 
+                <p style="float: left;"><a href="inicio.html"><img src="images/logoo.jpg" width="150" height="66"></a></p>
+                <nav class="dropdownmenu">
+                    <ul style="margin-left: 25%;">
+                      <li><a class="btn btn-1">inicio</a></li>
+                      <li><a class="btn btn-1" href="newhtml.html">ofertas</a></li>
+                      <li><a class="btn btn-1">inscripciones</a>
+                       <!-- <ul id="submenu">
+                          <li><a href="http://www.jochaho.com/wordpress/difference-between-svg-vs-canvas/">Difference between SVG vs. Canvas</a></li>
+                          <li><a href="http://www.jochaho.com/wordpress/new-features-in-html5/">New features in HTML5</a></li>
+                          <li><a href="http://www.jochaho.com/wordpress/creating-links-to-sections-within-a-webpage/">Creating links to sections within a webpage</a></li>
+                        </ul> -->
+                      </li>
+                      <li><a class="btn btn-1">curriculum</a></li>
+                      <li><a class="btn btn-1">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+	</div>
+        </div>
+        <!-- END TOP BAR-->
+        
+        <div class="form-wrap">
+            <div class="profile"><img src="https://html5book.ru/wp-content/uploads/2016/10/profile-image.png">
+                <h1>PERFIL</h1>
+            </div>
+            <form class="formCurriculum">
+                <div>
+                    <label for="name">nombre</label>
+                    <input type="text" name="name" required>
+                </div>
+                <div class="radio">
+                    <span>PABLO</span>
+                    <input type="radio" name="sex" value="hombre">hombre
+                    <div class="radio-control male"></div>
+                    <input type="radio" name="sex" value="mujer">mujer
+                    <div class="radio-control female"></div>
+                </div>
+                <div>
+                    <label for="email">E-mail</label>
+                    <input type="email" name="email" required>
+                </div>
+                <div>
+                    <label for="country">pais</label>
+                    <select name="country">
+                    <option>España UK PLANETA CULO</option>
+                        <option value="ESPAÑA">ESPAÑA</option> 
+                        <option value="UK">UK</option> 
+                        <option value="PLANETA CULO">PLANETA CULO</option> 
+                    </select> 
+                    <div class="select-arrow"></div> 
+                </div> 
+                <button type="submit">OK</button> 
+            </form> 
+        </div>
+        
+        
+    </body>
+</html>
