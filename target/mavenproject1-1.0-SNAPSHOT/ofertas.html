@@ -41,11 +41,11 @@ and open the template in the editor.
                 <p style="float: left;"><a href="inicio.html"><img src="images/logoo.jpg" width="150" height="66"></a></p>
                 <nav class="dropdownmenu">
                     <ul style="margin-left: 25%;">
-                      <li><a class="btn btn-1" href="inicio.html">inicio</a></li>
-                      <li><a class="btn btn-1" href="ofertas.html" style="color: #CB0017">ofertas</a></li>
-                      <li><a class="btn btn-1">inscripciones</a>
-                      <li><a class="btn btn-1" href="curriculum.html">curriculum</a></li>
-                      <li><a class="btn btn-1" href="newhtml.html">Contact Us</a></li>
+                      <li><a class="btn btn-1" id="inicio" style="color: #CB0017">inicio</a></li>
+                      <li><a class="btn btn-1" id ="ofertas">ofertas</a></li>
+                      <li><a class="btn btn-1" id="inscripciones">inscripciones</a>
+                      <li><a class="btn btn-1" id="curriculum">curriculum</a></li>
+                      <li><a class="btn btn-1" id="contactUs">Contact Us</a></li>
                     </ul>
                 </nav>
             </div>
@@ -169,7 +169,12 @@ and open the template in the editor.
      <script>
             var queryString = decodeURIComponent(window.location.search);
             queryString = queryString.slice(queryString.indexOf("=")+1);          
-            document.getElementById("username").innerHTML=queryString;            
+            document.getElementById("username").innerHTML=queryString;
+            document.getElementById("inicio").href = "inicio.html?USER=" + queryString;
+            document.getElementById("ofertas").href = "ofertas.html?USER=" + queryString;
+            document.getElementById("inscripciones").href = "inscripciones.html?USER=" + queryString;
+            document.getElementById("curriculum").href = "curriculum.html?USER=" + queryString;
+            document.getElementById("contactUs").href = "contactus.html?USER=" + queryString;
      </script>   
     </body>
 </html>
