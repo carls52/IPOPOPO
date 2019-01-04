@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="nuevo.css" media="screen" />
+    </head>
+    <body>
+           <!-- BEGIN TOP BAR -->
+    <div id="fondo">
+           <!-- RED ZONE -->
+        <div id="RedHead">
+             <div class="contenedor">
+                <ul id="Red">                
+                    <li class="RedDcha">
+                        <a href="index.html">
+                            <img src="images/power.png">
+                        </a>
+                     </li>
+                    <li class="RedDcha"><img src="images/line.png"></li>
+                    <li class="RedDcha"><label id="username"></label><li>
+                    <li class="RedDcha"><img src="images/user.png"></li>
+                </ul>
+            </div>
+        </div>
+           <!-- end red zone -->
+           <!-- black zone -->
+        <div class="topnav">
+            <div class="contenedorB"> 
+                <p style="float: left;"><a href="inicio.html"><img src="images/logoo.jpg" width="150" height="66"></a></p>
+                <nav class="dropdownmenu">
+                    <ul style="margin-left: 25%;">
+                      <li><a class="btn btn-1" id="inicio" >inicio</a></li>
+                      <li><a class="btn btn-1" id ="ofertas">ofertas</a></li>
+                      <li><a class="btn btn-1" id="inscripciones"style="color: #CB0017">inscripciones</a>
+                      <li><a class="btn btn-1" id="curriculum">curriculum</a></li>
+                      <li><a class="btn btn-1" id="contactUs">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+	</div>
+        </div>
+        <!-- END TOP BAR-->
+        
+        <div class="limite">
+        <div class="containerOferta">
+            <div class="item">
+                    <h3 class="item-title2">Desarrolador Junior HTML + Javascript</h3>
+                    <div>
+                      <p class ="item-meta2">PROCESANDO</p>
+                      <p class ="item-meta2"> Estado:&nbsp; </p>
+                      
+                    </div>
+            </div>        
+        </div>
+       
+        <div class="containerOferta">
+            <div class="item">
+                    <h3 class="item-title2">Prácticas CSIC Biología</h3>
+                    <div>
+                      <p class ="item-meta2">PROCESANDO</p>
+                      <p class ="item-meta2"> Estado:&nbsp; </p>
+
+                    </div> 
+            </div>
+        </div>
+            
+        <div class="containerOferta">
+            <div class="item">
+                <h3 class="item-title2">Desarrollador FrontEnd HTML5+Bootstrap</h3>
+                <div>
+                    <p class ="item-meta2">PROCESANDO </p>
+                    <p class ="item-meta2"> Estado:&nbsp; </p>  
+                </div> 
+            </div>
+        </div>
+        <div class="containerOferta">
+            <div class="item">
+                <h3 class="item-title2">Prácticas en Maquetación Web</h3>
+                <div>
+                    <p class ="item-meta2">PROCESANDO </p>
+                    <p class ="item-meta2"> Estado:&nbsp; </p> 
+                </div> 
+            </div>
+        </div>
+        <div class="containerOferta">
+            <div class="item">
+                <h3 class="item-title2">Becario desarrollo back</h3>
+                <div>
+                    <p class ="item-meta2">PROCESANDO </p>
+                    <p class ="item-meta2"> Estado:&nbsp; </p> 
+                </div> 
+            </div>
+        </div>
+            
+        </div>
+        
+        
+     <script>
+            var queryString = decodeURIComponent(window.location.search);
+            queryString = queryString.slice(queryString.indexOf("=")+1);          
+            document.getElementById("username").innerHTML=queryString;
+            document.getElementById("inicio").href = "inicio.html?USER=" + queryString;
+            document.getElementById("ofertas").href = "ofertas.html?USER=" + queryString;
+            document.getElementById("inscripciones").href = "inscripciones.html?USER=" + queryString;
+            document.getElementById("curriculum").href = "curriculum.html?USER=" + queryString;
+            document.getElementById("contactUs").href = "contactus.html?USER=" + queryString;
+     </script>   
+    </body>
+</html>

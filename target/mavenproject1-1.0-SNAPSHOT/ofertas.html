@@ -62,7 +62,7 @@ and open the template in the editor.
                     </div> 
                 </div>
                 <p class="item-description">El trabajo consiste en desarrollar la página web de prácticas de la Universidad. Se pide saber tanto Javascript como HTML a nivel medio, con facilidad de aprendizaje en este terreno tanto para aumentar el nivel como para aprender nuevas tecnologías/frameworks. Horario de mañana de lunes a viernes.</p>
-                <input type="button" class="button-order" id ="ins1" onClick="deactivateButton(this)" value = "Inscribirse"></button>
+                <input type="button" class="button-order" id ="ins1" onClick="deactivateButton(this)" value = "Inscribirse"/>
             </div>
         </div>
        
@@ -79,7 +79,7 @@ and open the template in the editor.
                     </div> 
                 </div>
                 <p class="item-description">En CSIC queremos empezar a trabajar con las nueva promesas de la ciencia desde antes que terminen sus estudios. Por eso, buscamos a 5 alumnos/as para que se empiecen a adentrar en el mundo alboral con nosotros. Realizarán tareas de laboratorio e investigación, y harán tareas de ayudante en las investigaciones que estén realizando. Horario flexible de lunes a sábado.</p>
-                <input type="button" class="button-order" id ="ins2" onClick="deactivateButton(this)" value = "Inscribirse"></button>
+                <input type="button" class="button-order" id ="ins2" onClick="deactivateButton(this)" value = "Inscribirse"/>
             </div>
         </div>
             
@@ -96,11 +96,47 @@ and open the template in the editor.
                     </div> 
                 </div>
                 <p class="item-description">La persona que realice estás prácticas se encargará de realizar la parte frontend de la renovación de la página de la URJC. Tendrá que tener conocimientos avanzados de HTML5 y el framework Bootstrap, además de conocimientos en JavaScript y CSS. Horario de tarde de lunes a viernes.</p>
-                <input type="button" class="button-order" id ="ins3" onClick="deactivateButton(this)" value = "Inscribirse"></button>
+                <input type="button" class="button-order" id ="ins3" onClick="deactivateButton(this)" value = "Inscribirse"/>
             </div>
         </div>
-       
-            
+        <div class="containerOferta">
+            <div class="item">
+                <div class="item-section">
+                    <h3 class="item-title">Prácticas en Maquetación Web</h3>
+                    <div>
+                      <p class ="item-meta">BABEL SISTEMAS DE INFORMACIÓN</p>
+                      <p class="item-meta">C/ Principe de Vergara, 108, 28002 MADRID, MADRID (ESPAÑA)</p>
+                      <p class="item-meta">Horario: 25 Horas semanales</p>
+                      <p class="item-meta">Ayuda al estudio: No</p>
+                      <p class="item-meta">Plaza/s: 1</p>
+                    </div> 
+                </div>
+                <p class="item-description">Buscamos una persona dinámica, proactiva, con muchas ganas de aprender y crecer en el mundo dela maquetación web que esté en último año de Informática. </p>
+                <input type="button" class="button-order" id ="ins4" onClick="deactivateButton(this)" value = "Inscribirse"/>
+        </div>
+        </div>
+        <div class="containerOferta">
+            <div class="item">
+                <div class="item-section">
+                    <h3 class="item-title">Becario desarrollo back</h3>
+                    <div>
+                      <p class ="item-meta">CLOUDAPPI, S.L.</p>
+                      <p class="item-meta">C Velasco 13, 28901 GETAFE, MADRID (ESPAÑA)</p>
+                      <p class="item-meta">Horario: 40 Horas semanales</p>
+                      <p class="item-meta">Ayuda al estudio: 500 Euros mensuales</p>
+                      <p class="item-meta">Plaza/s: 1</p>
+                    </div> 
+                </div>
+                <p class="item-description">CloudAppi, como empresa especilizada en innovación y con filosofía google, requiere cubrir varias posiciones de desarrollador back. Se ofrece:
+                <br/>    
+                - Horario flexible
+                <br/>
+                - Carrera profesional. El período de formación es muy alto, por lo que tenemos un 100% de incorporaciones después de las prácticas.
+                <br/>
+                Las tecnologías que se utilizará es Java y node.js, dependiendo del proyecto y del cliente.</p>
+                <input type="button" class="button-order" id ="ins5" onClick="deactivateButton(this)" value = "Inscribirse"/>
+            </div>
+        </div>    
         </div>
         
         
@@ -109,6 +145,7 @@ and open the template in the editor.
          function deactivateButton(btn){             
              document.getElementById(btn.id).disabled = true;
              document.getElementById(btn.id).value="Inscrito/a";
+             document.getElementById(btn.id).style="background-color:grey";
          }
             var queryString = decodeURIComponent(window.location.search);
             queryString = queryString.slice(queryString.indexOf("=")+1);          

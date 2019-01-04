@@ -514,12 +514,24 @@ select::-ms-expand {
   text-align: center;
   font-weight: 600;
 }
-
+.item-title2 {
+  float:left;
+  margin: 0 0 4px;
+  font-size: 18px;
+  /*text-align: center;*/
+  font-weight: 600;
+}
 .item-meta {
   margin: 0 0 2%;
   font-weight: 500;
   font-size: 14px;
   opacity: .5;
+}
+.item-meta2 {
+  float: right;
+  font-weight: 500;
+  font-size: 14px;
+  color: #000000;
 }
 
 .item-description {
