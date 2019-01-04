@@ -499,6 +499,12 @@ select::-ms-expand {
   border-bottom: 1px solid rgba(108, 114, 125, .3);
   padding-bottom: 16px;
 }
+.item-section2 {
+  margin-bottom: 16px;
+  border-bottom: 1px solid rgba(108, 114, 125, .3);
+  padding-bottom: 16px;
+  text-align: center;
+}
 
 .item-title {
   margin: 0 0 4px;
@@ -535,3 +541,10 @@ select::-ms-expand {
   outline: none;
 }
 
+.info {
+    padding-left: 15%;
+    text-align: center;
+}
+.info a{
+    color:#CB0017;
+}
