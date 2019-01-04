@@ -448,6 +448,7 @@ select::-ms-expand {
   background: white;
   float: right;
   height: auto;
+  max-height: 230px;
   width: 60%;
   padding: 3%;
   border-radius: 0 15px 20px 0;
@@ -469,32 +470,6 @@ select::-ms-expand {
     text-align: justify;
 }
 
-/*.containerOferta {
-  width: 35%;
-  float:left;
-  max-width: 360px;
-  margin-left: 10%;
-  margin-top: 2%;
-  margin-bottom: 2%;
-  padding: 20px 0;
-  border-radius: 20px;
-  border-style: solid;
-  border-color: #CB0017;
-
-}
-.containerOfertaB {
-  width: 35%;
-  float: left;
-  max-width: 360px;
-  margin-left: 10%;
-  margin-top: 2%;
-  margin-bottom: 2%;
-  padding: 20px 0;
-  border-radius: 20px;
-  border-style: solid;
-  border-color: #CB0017;
-
-}*/
 .containerOferta {
   border-radius: 20px;
   border-style: solid;
@@ -567,7 +542,18 @@ select::-ms-expand {
   font-weight: 500;
   line-height: 21px;
 }
-
+.espInputEmpresa
+{
+  text-justify: auto;
+  width: 100%;
+  max-width: 590px;
+  height: 37%;
+  max-height: 150px;
+  margin: 0 0 16px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 21px;
+}
 .button-order {
   display: block;
   width: 100%;
