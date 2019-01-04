@@ -33,7 +33,7 @@ and open the template in the editor.
            <!-- black zone -->
         <div class="topnav">
             <div class="contenedorB"> 
-                <p style="float: left;"><a href="ofertas.html"><img src="images/logoo.jpg" width="150" height="66" alt=""></a></p>
+                <p style="float: left;"><a id = "imagen"><img src="images/logoo.jpg" width="150" height="66"></a></p>
                 <nav class="dropdownmenu">
                     <ul style="margin-left: 25%;">
                       <li><a class="btn btn-1" id ="misofertas" >mis ofertas</a></li>
@@ -77,6 +77,7 @@ and open the template in the editor.
             var queryString = decodeURIComponent(window.location.search);
             queryString = queryString.slice(queryString.indexOf("=")+1);          
             document.getElementById("username").innerHTML=queryString;
+            document.getElementById("imagen").href = "misOfertas.html?USER=" + queryString;
             document.getElementById("misofertas").href = "misOfertas.html?USER=" + queryString;
             document.getElementById("crearoferta").href = "crearOferta.html?USER=" + queryString;
             document.getElementById("info").href = "miEmpresa.html?USER=" + queryString;

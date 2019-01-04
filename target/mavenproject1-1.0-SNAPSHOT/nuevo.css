@@ -484,6 +484,7 @@ select::-ms-expand {
   border-radius: 3px;
 }
 
+
 .item-section {
   margin-bottom: 16px;
   display: flex;
@@ -574,4 +575,8 @@ select::-ms-expand {
 }
 .info a{
     color:#CB0017;
+}
+
+.tableAdmin {
+    font-size: 24px;
 }

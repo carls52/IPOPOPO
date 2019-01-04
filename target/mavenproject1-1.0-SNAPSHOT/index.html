@@ -60,6 +60,9 @@
                     else if (usuario=="c.posada" && password=="c.posada") {
                         location.href="ofertas.html" + "?USER=" + usuario;
                     }
+                    else if (usuario=="admin" && password=="admin") {
+                        location.href="ofertasAdmin.html" + "?USER=" + usuario;
+                    }
                     else if (usuario=="" && password=="") {
                         alert("Error, debes introducir un usuario o contraseña.")
                     }
@@ -74,9 +77,13 @@
                     else if (usuario=="p.lopez" && password=="p.lopez") {
                         location.href="misOfertas.html" + "?USER=" + usuario;
                     }
+                    else if (usuario=="admin" && password=="admin") {
+                        location.href="ofertasAdmin.html" + "?USER=" + usuario;
+                    }
                     else if (usuario=="" && password=="") {
                         alert("Error, debes introducir un usuario o contraseña.")
                     }
+
                     else{
                         alert("Error, usuario o contraseña no validos.")
                     }
