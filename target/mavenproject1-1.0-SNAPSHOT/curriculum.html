@@ -55,28 +55,28 @@ and open the template in the editor.
             <form class="formCurriculum">
                 <table class="table-content">
                     <tr>
-                    <th>Nombre:</th><td><input type="text" name="name" placeholder="Nombre" required></td>
-                    <th>Apellidos:</th><td><input type="text" name="name" placeholder="Apellidos" required></td>
+                    <th>Nombre:</th><td><input type="text" id="nombre" name="name" placeholder="Nombre" required></td>
+                    <th>Apellidos:</th><td><input type="text" id="apellidos" name="name" placeholder="Apellidos" required></td>
                     </tr>
                     <tr>
-                      <th>DNI:</th><td><input type="text" name="name" placeholder="DNI" required></td>
-                      <th>Teléfono:</th><td><input type="text" name="name" placeholder="Teléfono" required></td>
+                      <th>DNI:</th><td><input type="text" id="dni" name="name" placeholder="DNI" required></td>
+                      <th>Teléfono:</th><td><input type="text" id="telefono" name="name" placeholder="Teléfono" required></td>
                     </tr>
                     <tr>
-                      <th>Email:</th><td><input type="text" name="name" placeholder="Email" required></td>
-                      <th>Titulaciones:</th><td><input type="text" name="name" placeholder="Titulaciones" required></td>
+                      <th>Email:</th><td><input type="text" id="email" name="name" placeholder="Email" required></td>
+                      <th>Titulaciones:</th><td><input type="text" id="titulaciones" name="name" placeholder="Titulaciones" required></td>
                     </tr>
                      </table>     
                   <p class="titulo">Experiencia laboral</p>
-                  <input class="espInput" type="text" name="name">
+                  <input class="espInput" id="expLab" type="text" name="name">
                   <p class="titulo">Formación reglada</p>
-                  <input class="espInput" type="text" name="name">
+                  <input class="espInput" id="formReg" type="text" name="name">
                   <p class="titulo">Formación adicional</p>
-                  <input class="espInput" type="text" name="name">
+                  <input class="espInput" id="formAd" type="text" name="name">
                   <p class="titulo">Idiomas</p>
-                  <input class="espInput" type="text" name="name">
+                  <input class="espInput" id="idiomas" type="text" name="name">
                   <p class="titulo">Otros datos</p>
-                  <input class="espInput" type="text" name="name">
+                  <input class="espInput" id="otros" type="text" name="name">
                 <button class="btnCurriculum" type="submit">GUARDAR</button>  
 
             </form> 
@@ -91,6 +91,60 @@ and open the template in the editor.
             document.getElementById("inscripciones").href = "inscripciones.html?USER=" + queryString;
             document.getElementById("curriculum").href = "curriculum.html?USER=" + queryString;
             document.getElementById("contactUs").href = "contactus.html?USER=" + queryString;
+            switch(queryString){
+                case "p.perez":
+                    document.getElementById("nombre").value="Pepe";
+                    document.getElementById("apellidos").value="Pérez";
+                    document.getElementById("dni").value="213544632A";
+                    document.getElementById("telefono").value="652314889";
+                    document.getElementById("email").value="p.perez@urjc.es";
+                    document.getElementById("titulaciones").value="GII";
+                    document.getElementById("expLab").value="-He ayudado a mi padre en el bar muchos veranos.-Soy el informático de mi familia";
+                    document.getElementById("formReg").value="-Bachillerato Ciencias y Tecnología.";
+                    document.getElementById("formAd").value="";
+                    document.getElementById("idiomas").value="-Nivel B2 Inglés";
+                    document.getElementById("otros").value="-Carnet de conducir B1.-Se me da bien trabajar en equipo.-Aprendo rápido";
+                    break;
+                case "c.posada":
+                    document.getElementById("nombre").value="Cristian";
+                    document.getElementById("apellidos").value="Posada";
+                    document.getElementById("dni").value="3214512B";
+                    document.getElementById("telefono").value="653846210";
+                    document.getElementById("email").value="c.posada@urjc.es";
+                    document.getElementById("titulaciones").value="GII+GIC";
+                    document.getElementById("expLab").value="-Mozo y oficial de almacén en varias empresas.-Dependiente de tiendas textiles.-Becario de colaboración, URJC";
+                    document.getElementById("formReg").value="Bachillerato de Ciencias y Tecnología";
+                    document.getElementById("formAd").value="-Carnet de manipulador de alimentos.-Curso de monitor de comedor escolar.-Curso de mantenimiento básico de piscinas.";
+                    document.getElementById("idiomas").value="-Inglés, nivel C1";
+                    document.getElementById("otros").value="-Carnet de conducir B1.-Gran facilidad de aprendizaje, de adaptación a nuevos sitios y de trabajo en equipo.-Persona proactiva y amable.";
+                    break;
+                case "c.gil":
+                    document.getElementById("nombre").value="Carlos";
+                    document.getElementById("apellidos").value="Gil";
+                    document.getElementById("dni").value="00241244Z";
+                    document.getElementById("telefono").value="745161412";
+                    document.getElementById("email").value="c.gil@urjc.es";
+                    document.getElementById("titulaciones").value="GII+GIC";
+                    document.getElementById("expLab").value="-Me cocino en casa";
+                    document.getElementById("formReg").value="-Bachillerato Ciencias y Tecnología";
+                    document.getElementById("formAd").value="-Weaboo certificado por animeflv.net y por la SD de mi teléfono.";
+                    document.getElementById("idiomas").value="Inglés nivel C1 (Me fui a estudiar a EEUU).";
+                    document.getElementById("otros").value="-Soy rico.-A veces no se cocinarme aunque lo he puesto antes.-No voy a clase";
+                    break;
+                /*case "":
+                    document.getElementById("nombre").value="";
+                    document.getElementById("apellidos").value="";
+                    document.getElementById("dni").value="";
+                    document.getElementById("telefono").value="";
+                    document.getElementById("email").value="";
+                    document.getElementById("titulaciones").value="";
+                    document.getElementById("expLab").value="";
+                    document.getElementById("formReg").value="";
+                    document.getElementById("formAd").value="";
+                    document.getElementById("idiomas").value="";
+                    document.getElementById("otros").value="";
+                    break;*/
+            }
      </script>   
     </body>
 </html>
