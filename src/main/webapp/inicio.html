@@ -19,7 +19,7 @@ and open the template in the editor.
              <div class="contenedor">
                 <ul id="Red">                
                     <li class="RedDcha">
-                        <a href="index.html">
+                        <a id = "imagen">
                             <img src="images/power.png">
                         </a>
                      </li>
@@ -52,7 +52,8 @@ and open the template in the editor.
 
      <script>
             var queryString = decodeURIComponent(window.location.search);
-            queryString = queryString.slice(queryString.indexOf("=")+1);          
+            queryString = queryString.slice(queryString.indexOf("=")+1);
+            document.getElementById("imagen").href = "ofertas.html?USER=" + queryString;
             document.getElementById("username").innerHTML=queryString;
             document.getElementById("inicio").href = "inicio.html?USER=" + queryString;
             document.getElementById("ofertas").href = "ofertas.html?USER=" + queryString;

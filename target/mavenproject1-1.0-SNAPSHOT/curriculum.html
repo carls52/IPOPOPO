@@ -33,7 +33,7 @@ and open the template in the editor.
            <!-- black zone -->
         <div class="topnav">
             <div class="contenedorB"> 
-                <p style="float: left;"><a href="ofertas.html"><img src="images/logoo.jpg" width="150" height="66"></a></p>
+                <p style="float: left;"><a id ="imagen"><img src="images/logoo.jpg" width="150" height="66"></a></p>
                 <nav class="dropdownmenu">
                     <ul style="margin-left: 25%;">
                       <li><a class="btn btn-1" id ="ofertas">ofertas</a></li>
@@ -49,7 +49,7 @@ and open the template in the editor.
 
         <div class="form-wrap">
             <div class="profile"><img src="images/graduation.png">
-                <h1>USERNAME</h1>
+                <h1><span id ="usernamecv"></span></h1>
             </div>
             <form class="formCurriculum">
                 <table class="table-content">
@@ -81,8 +81,10 @@ and open the template in the editor.
         
      <script>
             var queryString = decodeURIComponent(window.location.search);
-            queryString = queryString.slice(queryString.indexOf("=")+1);          
+            queryString = queryString.slice(queryString.indexOf("=")+1);
+            document.getElementById("imagen").href = "ofertas.html?USER=" + queryString;
             document.getElementById("username").innerHTML=queryString;
+            document.getElementById("usernamecv").innerHTML=queryString;
             document.getElementById("ofertas").href = "ofertas.html?USER=" + queryString;
             document.getElementById("inscripciones").href = "inscripciones.html?USER=" + queryString;
             document.getElementById("curriculum").href = "curriculum.html?USER=" + queryString;
