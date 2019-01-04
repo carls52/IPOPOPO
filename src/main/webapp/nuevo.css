@@ -25,6 +25,8 @@ body {
 }
 #fondo{background-color: #000000}
 .contenedor{
+    height: 20px;
+    background-color: #CB0017;
     padding-right: 5%;
     padding-left: 2%;
 }
