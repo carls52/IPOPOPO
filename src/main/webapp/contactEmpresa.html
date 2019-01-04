@@ -1,0 +1,112 @@
+<html>
+    <head>
+        <title>Ofertas</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="nuevo.css" media="screen">
+    </head>
+    <body>
+           <!-- BEGIN TOP BAR -->
+    <div id="fondo">
+           <!-- RED ZONE -->
+        <div id="RedHead">
+             <div class="contenedor">
+                <ul id="Red">               
+                    <li class="RedDcha">
+                        <a href="index.html">
+                            <img src="images/power.png" alt="">
+                        </a>
+                     </li>
+                    <li class="RedDcha"><img src="images/line.png" alt=""></li>
+                    <li class="RedDcha"><label id="username"></label><li>
+                    <li class="RedDcha"><img src="images/user.png" alt=""></li>
+                </ul>
+            </div>
+        </div>
+           <!-- end red zone -->
+           <!-- black zone -->
+        <div class="topnav">
+            <div class="contenedorB"> 
+                <p style="float: left;"><a href="ofertas.html"><img src="images/logoo.jpg" width="150" height="66" alt=""></a></p>
+                <nav class="dropdownmenu">
+                    <ul style="margin-left: 25%;">
+                      <li><a class="btn btn-1" id ="misofertas" >mis ofertas</a></li>
+                      <li><a class="btn btn-1" id="crearoferta" >crear oferta</a>
+                      <li><a class="btn btn-1" id="info">mi empresa</a></li>
+                      <li><a class="btn btn-1" id="contactUs" style="color: #CB0017">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+	</div>
+        </div>
+        <!-- END TOP BAR-->
+        <div class="limite">
+        <div class="containerOferta">
+            <div class="item">
+                <div class="item-section2">
+                    <h3 class="item-title">INFORMACIÓN CAMPUS</h3>
+                </div>    
+                    <table class="info" cellspacing="20">
+                        <tbody>
+                            <tr>
+                                <td>
+                                <p><strong>Alcorcón</strong></p>
+                                    <p>Universidad Rey Juan Carlos</p>
+                                    <p>Avda. de Atenas, s/n</p>
+                                    <p>28922 Alcorcón, Madrid</p>
+                                    <p><a href="mailto:alcorcon.gerencia@urjc.es">alcorcon.gerencia@urjc.es</a></p>
+                                    <p>Secretaría de alumnos: edificio de gestión</p>
+                                    <p><a href="mailto:alcorcon.secretariadealumnos@urjc.es" >alcorcon.secretariadealumnos@urjc.es</a></p>
+                                </td>
+                                <td>
+                                <p><strong>Aranjuez</strong></p>
+                                    <p>Universidad Rey Juan Carlos</p>
+                                    <p>Edificio Maestro Rodrigo C/Infantas, 55</p>
+                                    <p>28300 Aranjuez, Madrid</p>
+                                    <p><a href="mailto:gerencia.aranjuez@urjc.es" >gerencia.aranjuez@urjc.es</a></p>
+                                    <p>Secretaría de alumnos: edificio de gestión</p>
+                                    <p><a href="mailto:aranjuez.secretariadealumnos@urjc.es" >aranjuez.secretariadealumnos@urjc.es</a></p>
+                                </td>
+                                <td><strong>Fuenlabrada</strong>
+                                    <p>Universidad Rey Juan Carlos</p>
+                                    <p>Camino del molino s/n</p>
+                                    <p>28943 Fuenlabrada, Madrid</p>
+                                    <p><a href="mailto:fuenlabrada.gerencia@urjc.es" >fuenlabrada.gerencia@urjc.es</a></p>
+                                    <p>Secretaría de alumnos: edificio de gestión</p>
+                                    <p><a href="mailto:fuenlabrada.secretariadealumnos@urjc.es" >fuenlabrada.secretariadealumnos@urjc.es</a></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><strong>Madrid</strong>
+                                    <p>Universidad Rey Juan Carlos</p>
+                                    <p>Paseo Artilleros s/n.28032 Madrid</p>
+                                    <p>Tel.: 91 488 7800 <a href="mailto:vicalvaro.gerencia@urjc.es" >vicalvaro.gerencia@urjc.es</a></p>
+                                    <p>Secretaría de alumnos: edificio de gestión</p>
+                                    <p><a href="mailto:vicalvaro.secretariaalumnos@urjc.es" >vicalvaro.secretariaalumnos@urjc.es</a> <a href="mailto:vicalvaro.secretariaalumnos@urjc.es"> </a></p>
+                                </td>
+                                <td><strong>Móstoles</strong>
+                                    <p>Universidad Rey Juan Carlos</p>
+                                    <p>Calle Tulipán s/n. 28933 Móstoles, Madrid</p>
+                                    <p><a href="mailto:mostoles.gerencia@urjc.es">mostoles.info@urjc.es</a></p>
+                                    <p>Secretaría de alumnos: edificio de gestión <br><a href="mailto:mostoles.secretariadealumnos@urjc.es">mostoles.secretariadealumnos@urjc.es</a> <a href="mailto:mostoles.secretariadealumnos@urjc.es"> </a></p>
+                                </td>
+                                <td>&nbsp;</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        
+
+     <script>
+            var queryString = decodeURIComponent(window.location.search);
+            queryString = queryString.slice(queryString.indexOf("=")+1);          
+            document.getElementById("username").innerHTML=queryString;
+            document.getElementById("misofertas").href = "misOfertas.html?USER=" + queryString;
+            document.getElementById("crearoferta").href = "crearOferta.html?USER=" + queryString;
+            document.getElementById("info").href = "miEmpresa.html?USER=" + queryString;
+            document.getElementById("contactUs").href = "contactEmpresa.html?USER=" + queryString;
+     </script>   
+    </body>
+</html>

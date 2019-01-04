@@ -444,6 +444,17 @@ select::-ms-expand {
   border-style: solid;/* BORRAR DESPUES */
   border-color: #CB0017;
 }
+.form-wrap3 {
+  width: 70%;
+  height: 100%; 
+  margin-top: 1%;
+  margin-left: 15%;
+  margin-right: 15%;
+  background: #ffffff;
+  border-radius: 20px;
+  border-style: solid;/* BORRAR DESPUES */
+  border-color: #CB0017;
+}
 
 .limite {
     margin-left: 15%; 
@@ -535,6 +546,17 @@ select::-ms-expand {
 }
 
 .item-description {
+  margin: 0 0 16px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 21px;
+}
+.item-descriptionEmpresa {
+  text-justify: auto;
+  width: 100%;
+  max-width: 1280px;
+  height: 200px;
+  max-height: 400px;
   margin: 0 0 16px;
   font-size: 16px;
   font-weight: 500;
