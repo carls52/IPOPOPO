@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Ofertas</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="nuevo.css" media="screen">
+    </head>
+    <body>
+           <!-- BEGIN TOP BAR -->
+    <div id="fondo">
+           <!-- RED ZONE -->
+        <div id="RedHead">
+             <div class="contenedor">
+                <ul id="Red">               
+                    <li class="RedDcha">
+                        <a href="index.html">
+                            <img src="images/power.png" alt="">
+                        </a>
+                     </li>
+                    <li class="RedDcha"><img src="images/line.png" alt=""></li>
+                    <li class="RedDcha"><label id="username"></label><li>
+                    <li class="RedDcha"><img src="images/user.png" alt=""></li>
+                </ul>
+            </div>
+        </div>
+           <!-- end red zone -->
+           <!-- black zone -->
+        <div class="topnav">
+            <div class="contenedorB"> 
+                <p style="float: left;"><a href="ofertas.html"><img src="images/logoo.jpg" width="150" height="66" alt=""></a></p>
+                <nav class="dropdownmenu">
+                    <ul style="margin-left: 25%;">
+                      <li><a class="btn btn-1" id ="misofertas" style="color: #CB0017">mis ofertas</a></li>
+                      <li><a class="btn btn-1" id="crearoferta">crear oferta</a>
+                      <li><a class="btn btn-1" id="info">mi empresa</a></li>
+                      <li><a class="btn btn-1" id="contactUs">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+	</div>
+        </div>
+        <!-- END TOP BAR-->
+
+        <div class="limite">
+        <div class="containerOferta">
+            <div class="item">
+                <div class="item-section">
+                    <input type="text" placeholder="Título">
+                    <div>
+                      <p class ="item-meta">URJC</p>
+                      <p class="item-meta">Avenida Tuplipán s/n</p>
+                      <p class="item-meta">Horario: 35 Horas semanales</p>
+                      <p class="item-meta">Ayuda al estudio: 350 Euros mensuales</p>
+                      <p class="item-meta">Plaza/s: 5</p>
+                    </div> 
+                </div>
+                <p class="item-description">El trabajo consiste en desarrollar la página web de prácticas de la Universidad. Se pide saber tanto Javascript como HTML a nivel medio, con facilidad de aprendizaje en este terreno tanto para aumentar el nivel como para aprender nuevas tecnologías/frameworks. Horario de mañana de lunes a viernes.</p>
+                <input type="button" class="button-order" id ="ins1" onClick="deactivateButton(this)" value = "Inscribirse"/>
+            </div>
+        </div>
+        </div>
+        
+        
+        
+     <script>
+         function deactivateButton(btn){             
+             document.getElementById(btn.id).disabled = true;
+             document.getElementById(btn.id).value="Inscrito/a";
+             document.getElementById(btn.id).style="background-color:grey";
+         }
+            var queryString = decodeURIComponent(window.location.search);
+            queryString = queryString.slice(queryString.indexOf("=")+1);          
+            document.getElementById("username").innerHTML=queryString;
+            document.getElementById("misofertas").href = "misOfertas.html?USER=" + queryString;
+            document.getElementById("crearoferta").href = "crearOferta.html?USER=" + queryString;
+            document.getElementById("info").href = "miEmpresa.html?USER=" + queryString;
+            document.getElementById("contactUs").href = "contactus.html?USER=" + queryString;
+     </script>   
+    </body>
+</html>

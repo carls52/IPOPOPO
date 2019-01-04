@@ -52,13 +52,13 @@
                 var opcion=document.getElementsByClassName("switch-input")[0].checked ? "Alumno" : "Profesor";
                 if (opcion=="Alumno"){                    
                     if (usuario=="p.perez" && password=="p.perez") {
-                        location.href="inicio.html" + "?USER=" + usuario;
+                        location.href="ofertas.html" + "?USER=" + usuario;
                     }
                     else if (usuario=="c.gil" && password=="c.gil") {
-                        location.href="inicio.html" + "?USER=" + usuario;
+                        location.href="ofertas.html" + "?USER=" + usuario;
                     }
                     else if (usuario=="c.posada" && password=="c.posada") {
-                        location.href="inicio.html" + "?USER=" + usuario;
+                        location.href="ofertas.html" + "?USER=" + usuario;
                     }
                     else if (usuario=="" && password=="") {
                         alert("Error, debes introducir un usuario o contraseña.")
@@ -69,10 +69,10 @@
                 }
                 if (opcion=="Profesor"){
                     if (usuario=="USUARIO3" && password=="CONTRASEÑA3") {
-                        location.href="inicio.html" + "?USER=" + usuario;
+                        location.href="misOfertas.html" + "?USER=" + usuario;
                     }
                     else if (usuario=="aaa" && password=="aaa") {
-                        location.href="inicio.html" + "?USER=" + usuario;
+                        location.href="misOfertas.html" + "?USER=" + usuario;
                     }
                     else if (usuario=="" && password=="") {
                         alert("Error, debes introducir un usuario o contraseña.")

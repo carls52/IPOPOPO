@@ -33,10 +33,9 @@ and open the template in the editor.
            <!-- black zone -->
         <div class="topnav">
             <div class="contenedorB"> 
-                <p style="float: left;"><a href="inicio.html"><img src="images/logoo.jpg" width="150" height="66"></a></p>
+                <p style="float: left;"><a href="ofertas.html"><img src="images/logoo.jpg" width="150" height="66"></a></p>
                 <nav class="dropdownmenu">
                     <ul style="margin-left: 25%;">
-                      <li><a class="btn btn-1" id="inicio" >inicio</a></li>
                       <li><a class="btn btn-1" id ="ofertas" style="color: #CB0017">ofertas</a></li>
                       <li><a class="btn btn-1" id="inscripciones">inscripciones</a>
                       <li><a class="btn btn-1" id="curriculum">curriculum</a></li>
@@ -150,7 +149,6 @@ and open the template in the editor.
             var queryString = decodeURIComponent(window.location.search);
             queryString = queryString.slice(queryString.indexOf("=")+1);          
             document.getElementById("username").innerHTML=queryString;
-            document.getElementById("inicio").href = "inicio.html?USER=" + queryString;
             document.getElementById("ofertas").href = "ofertas.html?USER=" + queryString;
             document.getElementById("inscripciones").href = "inscripciones.html?USER=" + queryString;
             document.getElementById("curriculum").href = "curriculum.html?USER=" + queryString;
