@@ -44,7 +44,7 @@
  
         <div class="form-wrap3">
             <div class="profile2"><img src="images/graduation.png">
-                <h1>USERNAME</h1>
+                <h1><span class="currirulumName" id ="usernamecv"></span></h1>
             </div>
             
             <form class="formEmpresa">
@@ -72,6 +72,7 @@
             queryString = queryString.slice(queryString.indexOf("=")+1);
             document.getElementById("imagen").href = "misOfertas.html?USER=" + queryString;
             document.getElementById("username").innerHTML=queryString;
+            document.getElementById("usernamecv").innerHTML=queryString;
             document.getElementById("misofertas").href = "misOfertas.html?USER=" + queryString;
             document.getElementById("crearoferta").href = "crearOferta.html?USER=" + queryString;
             document.getElementById("info").href = "miEmpresa.html?USER=" + queryString;
