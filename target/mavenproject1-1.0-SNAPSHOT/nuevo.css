@@ -360,11 +360,11 @@ li:hover ul#submenu {
 }
 
 
-label, span {
+/*label, span {
   display: block;
   font-size: 14px;
   margin-bottom: 8px;
-}
+}*/
 
 select {
   width: 100%;
@@ -579,4 +579,7 @@ select::-ms-expand {
 
 .tableAdmin {
     font-size: 24px;
+}
+.currirulumName {
+    font-size: 24px; 
 }

@@ -34,7 +34,7 @@
                       <li><a class="btn btn-1" id ="misofertas" >mis ofertas</a></li>
                       <li><a class="btn btn-1" id="crearoferta" >crear oferta</a>
                       <li><a class="btn btn-1" id="info" style="color: #CB0017">mi empresa</a></li>
-                      <li><a class="btn btn-1" id="contacto" >Contact Us</a></li>
+                      <li><a class="btn btn-1" id="contactUs" >Contacto</a></li>
                     </ul>
                 </nav>
             </div>
@@ -58,12 +58,12 @@
                       <th>Teléfono:</th><td><input type="text" id="telefono" name="name" placeholder="Teléfono" required></td>
                     </tr>
                     <tr>
-                      <th>Sector:</th><td><input type="text" id="titulaciones" name="name" placeholder="Sector" required></td>
+                      <th>Sector:</th><td><input type="text" id="sector" name="name" placeholder="Sector" required></td>
                       <th></th><td></td>
                     </tr>
                      </table>     
                   <p class="titulo">Descripción</p>
-                  <textarea class="espInputEmpresa" id="expLab" name="name"></textarea>  
+                  <textarea class="espInputEmpresa" id="desc" name="name"></textarea>  
             </form> 
         </div>
 
@@ -76,6 +76,32 @@
             document.getElementById("crearoferta").href = "crearOferta.html?USER=" + queryString;
             document.getElementById("info").href = "miEmpresa.html?USER=" + queryString;
             document.getElementById("contactUs").href = "contactEmpresa.html?USER=" + queryString;
+            switch(queryString){
+                case "p.lopez":
+                    document.getElementById("nombre").value="URJC";                    
+                    document.getElementById("telefono").value="914888616";
+                    document.getElementById("email").value="p.lopez@urjc.es";                    
+                    document.getElementById("dir").value="Av. Tulipán s/n";
+                    document.getElementById("sector").value="Informática";
+                    document.getElementById("desc").value="La Universidad Rey Juan Carlos es una de las mejores universidades públicas de España a pesar de su corta edad. Nuestro depertamento de Informática tiene un enfoque muy profesional, y se encarga principalmente de realizar y mantener las páginas webs de la Universidad, soporte de los equipos que usan los alumnos y creación y mantenimiento de varias aplicaciones que usan alumnos, profesores o personal de administración."
+                    break;
+                case "juan.martin":
+                    document.getElementById("nombre").value="CSIC";                    
+                    document.getElementById("telefono").value="915463211";
+                    document.getElementById("email").value="juan.martin@CSIC.es";                    
+                    document.getElementById("dir").value="Calle Serrano 117";
+                    document.getElementById("sector").value="Ciencia e Investigación";
+                    document.getElementById("desc").value="La Agencia Estatal CSIC es el mayor organismo público de investigación de España y el tercero de Europa."
+                    break;
+                case "g.eiraldi":
+                    document.getElementById("nombre").value="CLOUDAPPI, S.L.";                    
+                    document.getElementById("telefono").value="917823210";
+                    document.getElementById("email").value="g.eiraldi@cldappi.es";                    
+                    document.getElementById("dir").value="C/ Velasco 13, 28901 GETAFE, MADRID (ESPAÑA)";
+                    document.getElementById("sector").value="Informática";
+                    document.getElementById("desc").value="CloudAppi es una empresa especilizada en innovación y con filosofía Google radicada en Getafe. Nos dedicamos principalmente a la creación de aplicaciones y webs multiplataformas para otras empresas, además de consultoría."
+                    break;
+            }
      </script>   
     </body>
 </html>

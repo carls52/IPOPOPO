@@ -41,7 +41,7 @@ and open the template in the editor.
                       <li><a class="btn btn-1" id ="ofertas">ofertas</a></li>
                       <li><a class="btn btn-1" id="inscripciones" style="color: #CB0017">inscripciones</a>
                       <li><a class="btn btn-1" id="curriculum">curriculum</a></li>
-                      <li><a class="btn btn-1" id="contacto">Contact Us</a></li>
+                      <li><a class="btn btn-1" id="contactUs">Contacto</a></li>
                     </ul>
                 </nav>
             </div>
@@ -50,51 +50,51 @@ and open the template in the editor.
         <!-- END TOP BAR-->
         
         <div class="limite">
-        <div class="containerOferta">
+        <div class="containerOferta" id="of1">
             <div class="item">
                     <h3 class="item-title2">Desarrolador Junior HTML + Javascript</h3>
                     <div>
-                      <p class ="item-meta2">PROCESANDO</p>
+                      <p class ="item-meta2" id="p1"></p>
                       <p class ="item-meta2"> Estado:&nbsp; </p>
                       
                     </div>
             </div>        
         </div>
        
-        <div class="containerOferta">
+        <div class="containerOferta" id = "of2">
             <div class="item">
                     <h3 class="item-title2">Prácticas CSIC Biología</h3>
                     <div>
-                      <p class ="item-meta2">PROCESANDO</p>
+                      <p class ="item-meta2" id="p2"></p>
                       <p class ="item-meta2"> Estado:&nbsp; </p>
 
                     </div> 
             </div>
         </div>
             
-        <div class="containerOferta">
+        <div class="containerOferta" id="of3">
             <div class="item">
                 <h3 class="item-title2">Desarrollador FrontEnd HTML5+Bootstrap</h3>
                 <div>
-                    <p class ="item-meta2">PROCESANDO </p>
+                    <p class ="item-meta2"id="p3"></p>
                     <p class ="item-meta2"> Estado:&nbsp; </p>  
                 </div> 
             </div>
         </div>
-        <div class="containerOferta">
+        <div class="containerOferta" id="of4">
             <div class="item">
                 <h3 class="item-title2">Prácticas en Maquetación Web</h3>
                 <div>
-                    <p class ="item-meta2">PROCESANDO </p>
+                    <p class ="item-meta2" id="p4"></p>
                     <p class ="item-meta2"> Estado:&nbsp; </p> 
                 </div> 
             </div>
         </div>
-        <div class="containerOferta">
+        <div class="containerOferta" id="of5">
             <div class="item">
                 <h3 class="item-title2">Becario desarrollo back</h3>
                 <div>
-                    <p class ="item-meta2">PROCESANDO </p>
+                    <p class ="item-meta2" id="p5"></p>
                     <p class ="item-meta2"> Estado:&nbsp; </p> 
                 </div> 
             </div>
@@ -105,7 +105,32 @@ and open the template in the editor.
         
      <script>
             var queryString = decodeURIComponent(window.location.search);
-            queryString = queryString.slice(queryString.indexOf("=")+1);  
+            queryString = queryString.slice(queryString.indexOf("=")+1);
+            if(queryString == "c.posada")
+            {
+                document.getElementById("of1").style.display = "none";                
+                document.getElementById("of2").style.display = "none";
+                document.getElementById("p3").innerHTML="ACEPTADO";
+                document.getElementById("p4").innerHTML="PROCESANDO";
+                document.getElementById("p5").innerHTML="RECHAZADO";
+            }
+            if(queryString =="c.gil")
+            {
+                document.getElementById("of2").style.display = "none";
+                document.getElementById("of4").style.display = "none";
+                document.getElementById("p1").innerHTML="PROCESANDO";
+                document.getElementById("p3").innerHTML="RECHAZADO";
+                document.getElementById("p5").innerHTML="ACEPTADO";
+            }
+            if(queryString == "p.perez")
+            {
+                document.getElementById("of1").style.display = "none";
+                document.getElementById("of3").style.display = "none";
+                document.getElementById("of4").style.display = "none";
+                document.getElementById("of5").style.display = "none";
+                document.getElementById("p2").innerHTML="ACEPTADO";
+
+            }
             document.getElementById("imagen").href = "ofertas.html?USER=" + queryString;
             document.getElementById("username").innerHTML=queryString;
             document.getElementById("ofertas").href = "ofertas.html?USER=" + queryString;

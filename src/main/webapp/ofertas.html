@@ -40,7 +40,7 @@ and open the template in the editor.
                       <li><a class="btn btn-1" id ="ofertas" style="color: #CB0017">ofertas</a></li>
                       <li><a class="btn btn-1" id="inscripciones">inscripciones</a>
                       <li><a class="btn btn-1" id="curriculum">curriculum</a></li>
-                      <li><a class="btn btn-1" id="contacto">Contact Us</a></li>
+                      <li><a class="btn btn-1" id="contactUs">Contacto</a></li>
                     </ul>
                 </nav>
             </div>
@@ -48,14 +48,14 @@ and open the template in the editor.
         </div>
         <!-- END TOP BAR-->
 
-        <div class="limite">
+       <div class="limite">
         <div class="containerOferta">
             <div class="item">
                 <div class="item-section">
                     <h3 class="item-title">Desarrolador Junior HTML + Javascript</h3>
                     <div>
                       <p class ="item-meta">URJC</p>
-                      <p class="item-meta">Avenida Tuplipán s/n</p>
+                      <p class="item-meta">Avenida Tulipán s/n</p>
                       <p class="item-meta">Horario: 35 Horas semanales</p>
                       <p class="item-meta">Ayuda al estudio: 350 Euros mensuales</p>
                       <p class="item-meta">Plaza/s: 5</p>
@@ -104,8 +104,8 @@ and open the template in the editor.
                 <div class="item-section">
                     <h3 class="item-title">Prácticas en Maquetación Web</h3>
                     <div>
-                      <p class ="item-meta">BABEL SISTEMAS DE INFORMACIÓN</p>
-                      <p class="item-meta">C/ Principe de Vergara, 108, 28002 MADRID, MADRID (ESPAÑA)</p>
+                      <p class ="item-meta">CLOUDAPPI, S.L</p>
+                      <p class="item-meta">C/ Velasco 13, 28901 GETAFE, MADRID (ESPAÑA)</p>
                       <p class="item-meta">Horario: 25 Horas semanales</p>
                       <p class="item-meta">Ayuda al estudio: No</p>
                       <p class="item-meta">Plaza/s: 1</p>
@@ -121,7 +121,7 @@ and open the template in the editor.
                     <h3 class="item-title">Becario desarrollo back</h3>
                     <div>
                       <p class ="item-meta">CLOUDAPPI, S.L.</p>
-                      <p class="item-meta">C Velasco 13, 28901 GETAFE, MADRID (ESPAÑA)</p>
+                      <p class="item-meta">C/ Velasco 13, 28901 GETAFE, MADRID (ESPAÑA)</p>
                       <p class="item-meta">Horario: 40 Horas semanales</p>
                       <p class="item-meta">Ayuda al estudio: 500 Euros mensuales</p>
                       <p class="item-meta">Plaza/s: 1</p>
@@ -147,8 +147,8 @@ and open the template in the editor.
              document.getElementById(btn.id).value="Inscrito/a";
              document.getElementById(btn.id).style="background-color:grey";
          }
-            var queryString = decodeURIComponent(window.location.search);
-            queryString = queryString.slice(queryString.indexOf("=")+1);      
+            var queryString = decodeURIComponent(window.location.search);            
+            queryString = queryString.slice(queryString.indexOf("=")+1);             
             document.getElementById("imagen").href = "ofertas.html?USER=" + queryString;
             document.getElementById("username").innerHTML=queryString;
             document.getElementById("ofertas").href = "ofertas.html?USER=" + queryString;
