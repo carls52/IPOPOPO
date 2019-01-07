@@ -570,10 +570,17 @@ select::-ms-expand {
 }
 
 .info {
-    padding-left: 15%;
+    padding-left: 10%;
     text-align: center;
 }
 .info a{
+    color:#CB0017;
+}
+.info2 {
+
+    text-align: center;
+}
+.info2 a{
     color:#CB0017;
 }
 
